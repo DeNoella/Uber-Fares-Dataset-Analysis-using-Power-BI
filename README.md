@@ -72,7 +72,7 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 - Longer ride durations generally result in higher fares
 - Average fare per km stays consistent but slightly rises during peak hours
 
-## Results:
+## Key Results:
 ### Key Discoveries and Pattern Identification
 #### Peak Ride Hours
  - Highest ride volumes occur during morning (7–9 AM) and evening (5–7 PM) commute times.
@@ -88,6 +88,43 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
  - Increased ride activity during summer months, suggesting seasonal travel trends.
 #### Peak vs Off-Peak Impact
  - Average fares are slightly higher during peak hours due to higher demand.
+
+## Conclusion
+
+### Summary of Main Findings
+- Uber rides show clear peak usage during morning and evening commute hours.
+- Weekends, especially Fridays and Saturdays, record the highest ride volumes.
+- The majority of fares are affordable, ranging between $5 and $20, with a few high-value outliers.
+- Ride density is highest in central NYC, particularly Midtown and Lower Manhattan.
+- Airport-related trips tend to have higher fares and longer distances.
+- There is a strong correlation between fare amount and distance traveled.
+- Seasonal patterns indicate increased ride demand during summer months.
+- Peak time rides are associated with slightly higher average fares, reflecting surge pricing or demand pressure.
+
+## Recommendations
+
+### Recommendations: Data-Driven Business Suggestions
+#### Optimize Driver Availability During Peak Hours
+- Increase driver coverage between 7–9 AM and 5–7 PM to meet demand and reduce wait times.
+  
+#### Weekend Promotions
+- Launch targeted discounts or ride bundles on Fridays and Saturdays to capitalize on high ride volumes.
+  
+#### Airport Zone Pricing Strategy
+- Adjust pricing models or introduce flat-rate fares for airport routes to increase transparency and rider trust.
+  
+#### Focus on Hotspot Coverage
+- Allocate more drivers in Midtown and Lower Manhattan, where demand is consistently high.
+  
+#### Monitor Seasonal Demand
+- Prepare for increased activity during summer months by offering seasonal incentives for drivers.
+  
+#### Refine Fare Strategy During Off-Peak Times
+- Introduce off-peak ride discounts to stimulate usage during lower-demand periods.
+  
+#### Use Distance-Fare Insights to Improve Estimations
+- Enhance fare estimation algorithms using fare-per-km analysis to better inform customers.
+
 
 </body>
 </html>
