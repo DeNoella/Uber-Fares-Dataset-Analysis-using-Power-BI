@@ -27,9 +27,9 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 #### 🗃️ 1. Data Collection
 - Downloaded Uber Fares dataset from Kaggle
 - Included:
-   1. fare amount
-   2. pickup time
-   3. geolocations
+   - fare amount
+   - pickup time
+   - geolocations
 
 #### 🧹 2. Data Cleaning (Python)
 - Used Pandas to load and inspect data
