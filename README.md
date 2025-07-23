@@ -6,7 +6,7 @@
 This project explores the Uber Fares Dataset using Power BI to extract meaningful insights about fare distribution, ride patterns, and operational performance. The dataset was cleaned and enhanced in Python, followed by interactive data visualization and dashboard development in Power BI.
 
 ## Project Objectives
-- To analyze <b> Uber fare patterns, ride durations</br>, and <br> temporal trends</br>
+- To analyze Uber fare patterns,ride durations, and temporal trends
 - To create new analytical features (e.g., hour, day, time categories)
 - To develop an interactive Power BI dashboard showing:
   
