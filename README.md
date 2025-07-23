@@ -1,5 +1,6 @@
 <html>
-  <body>
+<body>
+  
 # Uber-Fares-Dataset-Analysis-using-Power-BI
 ## Project Overview
 This project explores the Uber Fares Dataset using Power BI to extract meaningful insights about fare distribution, ride patterns, and operational performance. The dataset was cleaned and enhanced in Python, followed by interactive data visualization and dashboard development in Power BI.
