@@ -43,9 +43,9 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 #### 📊 4. Power BI Analysis
 - Imported dataset into Power BI Desktop
 - Built interactive visuals
- 1. fare trends
- 2. maps
- 3. time series
+  - fare trends
+  - maps
+  - time series
 - Added slicers, filters, and drill-down capabilities
 
 ## Analysis
@@ -125,6 +125,11 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 #### Use Distance-Fare Insights to Improve Estimations
 - Enhance fare estimation algorithms using fare-per-km analysis to better inform customers.
 
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 </body>
 </html>
