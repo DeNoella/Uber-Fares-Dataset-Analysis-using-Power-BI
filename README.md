@@ -77,7 +77,7 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 #### Peak Ride Hours
 Highest ride volumes occur during morning (7–9 AM) and evening (5–7 PM) commute times.
 #### Weekly Trends
-Fridays and Saturdays show the most Uber activity, indicating weekend demand.
+ - Fridays and Saturdays show the most Uber activity, indicating weekend demand.
 #### Fare Patterns
 Most fares are between $5 and $20, with a few outliers above $100 from longer trips.
 #### Geographic Hotspots
@@ -87,7 +87,7 @@ Clear positive correlation between ride distance and fare amount.
 #### Seasonal Variation
 Increased ride activity during summer months, suggesting seasonal travel trends.
 #### Peak vs Off-Peak Impact
-<b>Average fares are slightly higher</br>during <b>peak hours</br> due to higher demand.
+Average fares are slightly higher during peak hours due to higher demand.
 
 </body>
 </html>
