@@ -122,7 +122,7 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 - Built interactive visuals
   - fare trends
   - maps
-  - ![alt text](pics/latitudeandlongitude.png)
+   ![alt text](pics/latitudeandlongitude.png)
   - time series
 - Added slicers, filters, and drill-down capabilities
 
