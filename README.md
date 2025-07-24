@@ -120,26 +120,26 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 #### 📊 4. Power BI Analysis
 - Imported dataset into Power BI Desktop
 - Built interactive visuals
-   - fare trends <br>
+####   - fare trends <br>
 ##### Fare Amount by Hour
    ![alt text](pics/fare_amountbyhour.png)
 ##### Average Fair Amount by Year
    ![alt text](pics/averagefairamountbyyear.png)
-   - maps
+####   - maps <br>
 ##### Latitudes and Longitudes
-  - ![alt text](pics/latitudeandlongitude.png)
-   - time series
+   ![alt text](pics/latitudeandlongitude.png)
+####   - time series <br>
 ##### Pick up Date Time by Hour
-  - ![alt text](pics/pickupdatetimebyhour.png)
+   ![alt text](pics/pickupdatetimebyhour.png)
 ##### Sum of Hour by Year
-  - ![alt text](pics/sumofhourbyyear.png)
+   ![alt text](pics/sumofhourbyyear.png)
 ##### Pick up Date Time by Day
-  - ![alt text](pics/pickupdatetimenyday.png)
+   ![alt text](pics/pickupdatetimenyday.png)
 ##### Pick up Date time by Month
-  - ![alt text](pics/pickupdatetimebymonth2.png)
+   ![alt text](pics/pickupdatetimebymonth2.png)
 - Added slicers, filters, and drill-down capabilities
 ##### Slicers(Interactive Filters)
-- ![alt text](pics/slicers.png)
+   ![alt text](pics/slicers.png)
 
 ## Analysis
 
