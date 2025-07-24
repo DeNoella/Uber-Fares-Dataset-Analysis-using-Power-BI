@@ -132,6 +132,13 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 #### 📊 4. Power BI Analysis
 - Imported dataset into Power BI Desktop
 - Built interactive visuals
+- DAX formulas used
+   - Count
+   - Sum
+   - Average
+   - Variance
+   - Standard Variation
+     
 ####  Fare trends <br>
 ##### Fare Amount by Hour
    ![alt text](pics/fare_amountbyhour.png)
