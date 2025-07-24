@@ -47,6 +47,8 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
   # Check the shape (rows, columns)
   uber_df.shape
   uber_df.describe()
+<img width="777" height="161" alt="image" src="https://github.com/user-attachments/assets/92278aec-416d-4d98-8d57-ae5425f3cd23" />
+
 - Removed missing, duplicate, and outlier records
  ```python
    # Check for missing values
