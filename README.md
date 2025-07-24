@@ -66,6 +66,8 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
  ```
 <img width="923" height="239" alt="image" src="https://github.com/user-attachments/assets/751d2bca-71f3-4ba4-a233-7016c6e60f77" />
 
+<img width="926" height="52" alt="image" src="https://github.com/user-attachments/assets/c42e7cda-cf58-4d2a-9a50-3ffc4fa7deef" />
+
 <img width="919" height="207" alt="image" src="https://github.com/user-attachments/assets/c2fa454b-8eb8-4385-aac6-20f4f5fd4784" />
 
 - Exported cleaned CSV for analysis in Power BI
