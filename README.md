@@ -121,7 +121,9 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 - Imported dataset into Power BI Desktop
 - Built interactive visuals
   - fare trends
-  - ![alt text]("C:\Users\HP\Uber-Fares-Dataset-Analysis-using-Power-BI\pics\averagefairamountbyyear.png")
+  - ![alt text](pics/averagefairamountbyyear.png)
+  - ![alt text](pics/fare_amountbyhour.png)
+  - ![alt text](pics/averagefairamountbyyear.png)
   - maps
   - ![alt text](pics/latitudeandlongitude.png)
   - time series
