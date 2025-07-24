@@ -33,18 +33,96 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 
 #### 🧹 2. Data Cleaning (Python)
 - Used Pandas to load and inspect data
+  ```python
+  from google.colab import drive
+  drive.mount('/content/drive')
+  import pandas as pd
+  uber_df = pd.read_csv('drive/MyDrive/archives/uber.csv', low_memory=False)
+  # Check column data types
+  uber_df.dtypes
+  # Data set Structure
+  uber_df.head()
+  # Check the structure (columns, data types, non-null counts)
+  uber_df.info()
+  # Check the shape (rows, columns)
+  uber_df.shape
+  uber_df.describe()
 - Removed missing, duplicate, and outlier records
+ ```python
+   # Check for missing values
+   uber_df.isnull()
+   uber_df.isnull().sum()
+  # Check for duplicate rows
+  print("Duplicate Rows:", uber_df.duplicated().sum())
+  uber_df.duplicated()
+  # Drop rows with any missing values 
+  df = uber_df.dropna(axis=0)
+ ```
 - Exported cleaned CSV for analysis in Power BI
+  ```python
+  # Save cleaned dataset
+  from google.colab import files
+  uber_df.to_csv('uber.csv', index=False)
+  files.download('uber.csv')
+  ```
 
 #### 🧠 3. Feature Engineering
 - Extracted hour, day, month, weekday
+  ```python
+  import pandas as pd
+  import matplotlib.pyplot as plt
+  import seaborn as sns
+  
+  # Ensure pickup_datetime is in datetime format (with timezone awareness removed or converted)
+  uber_df['pickup_datetime'] = pd.to_datetime(uber_df['pickup_datetime'], utc=True)
+  uber_df['pickup_datetime'] = uber_df['pickup_datetime'].dt.tz_convert(None)  # Convert to naive datetime if needed
+  
+  # Extract hour from pickup time
+  uber_df['hour'] = uber_df['pickup_datetime'].dt.hour
+  
+  # Optional: Filter unrealistic fare amounts
+  uber_df = uber_df[(uber_df['fare_amount'] > 0) & (uber_df['fare_amount'] < 200)]
+  
+  # Plot average fare by hour
+  plt.figure(figsize=(10, 6))
+  sns.lineplot(x='hour', y='fare_amount', data=uber_df, estimator='mean', ci=None, marker='o')
+  plt.title('Average Fare Amount by Time of Day')
+  plt.xlabel('Hour of Day (0 = Midnight)')
+  plt.ylabel('Average Fare Amount ($)')
+  plt.grid(True)
+  plt.tight_layout()
+  plt.show()
+  ```
 - Created time periods (Peak/Off-Peak), ride distance, and duration
+  ```python
+  import pandas as pd
+  # Ensure datetime is parsed correctly (timezone-aware then convert to naive if needed)
+  uber_df['pickup_datetime'] = pd.to_datetime(uber_df['pickup_datetime'], utc=True)
+  uber_df['pickup_datetime'] = uber_df['pickup_datetime'].dt.tz_convert(None)
+  
+  # Create new features from datetime
+  uber_df['hour'] = uber_df['pickup_datetime'].dt.hour
+  uber_df['day'] = uber_df['pickup_datetime'].dt.day
+  uber_df['month'] = uber_df['pickup_datetime'].dt.month
+  uber_df['day_of_week'] = uber_df['pickup_datetime'].dt.day_name()  # e.g., Monday, Tuesday
+  
+  # Peak/Off-peak indicator
+  # Let's assume peak hours are 7-9 AM and 4-7 PM
+  def get_peak_hour(hour):
+      if 7 <= hour <= 9 or 16 <= hour <= 19:
+          return 'Peak'
+      else:
+          return 'Off-Peak'
+  
+  uber_df['time_period'] = uber_df['hour'].apply(get_peak_hour)
+    ```
 
 #### 📊 4. Power BI Analysis
 - Imported dataset into Power BI Desktop
 - Built interactive visuals
   - fare trends
   - maps
+    ![alt text](pics/latitudeandlongitude.png)
   - time series
 - Added slicers, filters, and drill-down capabilities
 
