@@ -131,6 +131,8 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 
 #### 📊 4. Power BI Analysis
 - Imported dataset into Power BI Desktop
+  <img width="959" height="478" alt="image" src="https://github.com/user-attachments/assets/489b1df1-5805-4ac2-99dc-e23bb968ecea" />
+
 - Built interactive visuals
 - DAX formulas used
    - Count
