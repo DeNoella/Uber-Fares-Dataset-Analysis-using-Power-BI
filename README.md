@@ -134,7 +134,7 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 ##### Sum of Hour by Year
   - ![alt text](pics/sumofhourbyyear.png)
 ##### Pick up Date Time by Day
-  - ![alt text](pics/pickupdatetimebyday2.png)
+  - ![alt text](pics/pickupdatetimenyday.png)
 ##### Pick up Date time by Month
   - ![alt text](pics/pickupdatetimebymonth2.png)
 - Added slicers, filters, and drill-down capabilities
