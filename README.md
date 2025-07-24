@@ -124,7 +124,7 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 ##### Fare Amount by Hour
    ![alt text](pics/fare_amountbyhour.png)
 ##### Average Fair Amount by Year
-  - ![alt text](pics/averagefairamountbyyear.png)
+   ![alt text](pics/averagefairamountbyyear.png)
    - maps
 ##### Latitudes and Longitudes
   - ![alt text](pics/latitudeandlongitude.png)
