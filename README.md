@@ -47,8 +47,11 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
   # Check the shape (rows, columns)
   uber_df.shape
   uber_df.describe()
-<img width="777" height="161" alt="image" src="https://github.com/user-attachments/assets/92278aec-416d-4d98-8d57-ae5425f3cd23" />
+<img width="914" height="158" alt="image" src="https://github.com/user-attachments/assets/f895a78e-9494-4711-9170-ad2a6d9fa1a9" />
+
 <img width="925" height="212" alt="image" src="https://github.com/user-attachments/assets/f29d2a72-c0d6-4f7c-91d2-6e6922cd7956" />
+
+<img width="923" height="170" alt="image" src="https://github.com/user-attachments/assets/d605b17c-e4d7-46f4-b719-2cbd8a9e85a4" />
 
 - Removed missing, duplicate, and outlier records
  ```python
@@ -61,6 +64,10 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
   # Drop rows with any missing values 
   df = uber_df.dropna(axis=0)
  ```
+<img width="923" height="239" alt="image" src="https://github.com/user-attachments/assets/751d2bca-71f3-4ba4-a233-7016c6e60f77" />
+
+<img width="919" height="207" alt="image" src="https://github.com/user-attachments/assets/c2fa454b-8eb8-4385-aac6-20f4f5fd4784" />
+
 - Exported cleaned CSV for analysis in Power BI
   ```python
   # Save cleaned dataset
