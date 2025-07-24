@@ -44,12 +44,25 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
   uber_df.info()
   # Check the shape (rows, columns)
   uber_df.shape
-  # Check for missing values
-  uber_df.isnull()
-  uber_df.isnull().sum()
   uber_df.describe()
 - Removed missing, duplicate, and outlier records
+ ```python
+   # Check for missing values
+   uber_df.isnull()
+   uber_df.isnull().sum()
+  # Check for duplicate rows
+  print("Duplicate Rows:", uber_df.duplicated().sum())
+  uber_df.duplicated()
+  # Drop rows with any missing values 
+  df = uber_df.dropna(axis=0)
+ ```
 - Exported cleaned CSV for analysis in Power BI
+  ```python
+  # Save cleaned dataset
+  from google.colab import files
+  uber_df.to_csv('uber.csv', index=False)
+  files.download('uber.csv')
+  ```
 
 #### 🧠 3. Feature Engineering
 - Extracted hour, day, month, weekday
