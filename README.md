@@ -9,11 +9,9 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 - To analyze Uber fare patterns,ride durations, and temporal trends
   ```
   # Check column data types
-uber_df.dtypes
-# Data set Structure
-uber_df.head()
-
-  ```
+  uber_df.dtypes 
+  # Data set Structure
+  uber_df.head()
 - To create new analytical features (e.g., hour, day, time categories)
 - To develop an interactive Power BI dashboard showing:
   
