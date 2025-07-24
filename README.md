@@ -33,7 +33,7 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 
 #### 🧹 2. Data Cleaning (Python)
 - Used Pandas to load and inspect data
-  ```
+  ```python
   import pandas as pd
   uber_df = pd.read_csv('drive/MyDrive/archives/uber.csv', low_memory=False)
   # Check column data types
