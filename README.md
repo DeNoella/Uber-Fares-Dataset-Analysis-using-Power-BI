@@ -1,4 +1,4 @@
-<html>
+ <html>
 <body>
   
 # Uber-Fares-Dataset-Analysis-using-Power-BI
@@ -48,6 +48,7 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
   uber_df.shape
   uber_df.describe()
 <img width="777" height="161" alt="image" src="https://github.com/user-attachments/assets/92278aec-416d-4d98-8d57-ae5425f3cd23" />
+<img width="925" height="212" alt="image" src="https://github.com/user-attachments/assets/f29d2a72-c0d6-4f7c-91d2-6e6922cd7956" />
 
 - Removed missing, duplicate, and outlier records
  ```python
