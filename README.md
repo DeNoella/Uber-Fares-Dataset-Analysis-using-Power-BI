@@ -1,6 +1,8 @@
  <html>
 <body>
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1L6EUlEwzX-6mc6YbqK7XBb0N0LYo0Bm4)
+<a href="https://colab.research.google.com/drive/1L6EUlEwzX-6mc6YbqK7XBb0N0LYo0Bm4" target="_blank">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
  
 # Uber-Fares-Dataset-Analysis-using-Power-BI
 ## 🚕 Project Overview
