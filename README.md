@@ -1,6 +1,6 @@
  <html>
 <body>
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1L6EUlEwzX-6mc6YbqK7XBb0N0LYo0Bm4)
+[![Open In Colab] (https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1L6EUlEwzX-6mc6YbqK7XBb0N0LYo0Bm4)
 # Uber-Fares-Dataset-Analysis-using-Power-BI
 ## 🚕 Project Overview
 This project explores the Uber Fares Dataset using Power BI to extract meaningful insights about fare distribution, ride patterns, and operational performance. The dataset was cleaned and enhanced in Python, followed by interactive data visualization and dashboard development in Power BI.
