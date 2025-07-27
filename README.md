@@ -74,7 +74,27 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 <img width="919" height="207" alt="image" src="https://github.com/user-attachments/assets/c2fa454b-8eb8-4385-aac6-20f4f5fd4784" />
 
 - Fare Distribution with Histogram and Box Plot in Google Colab
+```python
+# Fare amount vs passenger count
+import matplotlib.pyplot as plt
+import seaborn as sns
+# 1. Histogram for fare_amount
+plt.subplot(1, 2, 1)
+sns.histplot(uber_df['fare_amount'], bins=30, kde=True)
+plt.title('Fare Amount Distribution')
+plt.xlabel('Fare Amount')
+plt.ylabel('Frequency')
 
+# 2. Boxplot of fare_amount grouped by passenger_count
+plt.subplot(1, 2, 2)
+sns.boxplot(x='passenger_count', y='fare_amount', data=uber_df)
+plt.title('Fare Amount by Passenger Count')
+plt.xlabel('Passenger Count')
+plt.ylabel('Fare Amount')
+
+plt.tight_layout()
+plt.show()
+```
 <img width="935" height="329" alt="image" src="https://github.com/user-attachments/assets/6ba39f75-e732-4c44-830a-8eb071f97e25" />
 
 - Exported cleaned CSV for analysis in Power BI
