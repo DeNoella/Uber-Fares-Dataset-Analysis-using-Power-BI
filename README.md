@@ -4,26 +4,26 @@
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
  
-# Uber-Fares-Dataset-Analysis-using-Power-BI
+# Visual Insights from Uber Fares Dataset
 ## 🚕 Project Overview
-This project explores the Uber Fares Dataset using Power BI to extract meaningful insights about fare distribution, ride patterns, and operational performance. The dataset was cleaned and enhanced in Python, followed by interactive data visualization and dashboard development in Power BI.
+This project analyzes the Uber Fares Dataset with Power BI to uncover valuable insights into fare trends, ride behaviors, and operational metrics. Data preprocessing and enrichment were performed in Python, followed by the creation of interactive visualizations and dashboards using Power BI.
 
 ## 🎯 Project Objectives
-- To analyze Uber fare patterns,ride durations, and temporal trends
-- To create new analytical features (e.g., hour, day, time categories)
-- To develop an interactive Power BI dashboard showing:
+- Examine Uber fare trends, ride durations, and time-based patterns
+- Engineer new analytical features such as trip hour, day of the week, and time segments
+- Design and build an interactive Power BI dashboard that visualizes key insights
   
 ### 💵 Fare distribution
  1. histograms
  2. box plots
 ### 🚗 Ride patterns 
- 1. Hourly
- 2. Daily
- 3. Monthly
+1. Hourly level – showing peak hours and fare fluctuations
+2. Daily level – identifying day-wise trends and ride volume
+3. Monthly level – tracking long-term patterns and seasonal variations
     
 ### 🌦️ Seasonal and 🌍 geographic trends
-- To highlight busiest periods and, if possible, assess weather impact
-- To deliver actionable business insights through data storytelling
+- Highlight the busiest ride periods and, where applicable, evaluate the influence of weather conditions
+- Deliver actionable business insights through engaging data storytelling and visualization
 
 ## Methodology:
 
@@ -253,32 +253,47 @@ plt.show()
 
 ## Key Results:
 ### Key Discoveries and Pattern Identification
-#### Peak Ride Hours
- - Highest ride volumes occur during morning (7–9 AM) and evening (5–7 PM) commute times.
-#### Weekly Trends
- - Fridays and Saturdays show the most Uber activity, indicating weekend demand.
-#### Fare Patterns
- - Most fares are between $5 and $20, with a few outliers above $100 from longer trips.
-#### Geographic Hotspots
- - Frequent pickups in Midtown and Lower Manhattan; high fares near airport areas.
-#### Distance vs Fare
- - Clear positive correlation between ride distance and fare amount.
-#### Seasonal Variation
- - Increased ride activity during summer months, suggesting seasonal travel trends.
-#### Peak vs Off-Peak Impact
- - Average fares are slightly higher during peak hours due to higher demand.
+# 🕐 Peak Ride Hours
+Ride volumes peak during morning (7–9 AM) and evening (5–7 PM) commute times.
+
+# 📅 Weekly Trends
+Fridays and Saturdays have the highest ride activity, reflecting strong weekend demand.
+
+# 💰 Fare Patterns
+Most fares fall between $5 and $20, with occasional outliers above $100 for longer trips.
+
+# 📍 Geographic Hotspots
+Midtown and Lower Manhattan show the highest pickup density.
+
+Airport areas tend to have higher fares and longer trip distances.
+
+# 📏 Distance vs. Fare
+There’s a strong positive correlation between trip distance and fare amount.
+
+# 🌤️ Seasonal Variation
+Summer months see a notable rise in ride activity, indicating seasonal travel patterns.
+
+# 🔺 Peak vs. Off-Peak Impact
+Average fares are higher during peak hours, likely due to surge pricing and increased demand.
 
 ## Conclusion
 
 ### Summary of Main Findings
-- Uber rides show clear peak usage during morning and evening commute hours.
-- Weekends, especially Fridays and Saturdays, record the highest ride volumes.
-- The majority of fares are affordable, ranging between $5 and $20, with a few high-value outliers.
-- Ride density is highest in central NYC, particularly Midtown and Lower Manhattan.
-- Airport-related trips tend to have higher fares and longer distances.
-- There is a strong correlation between fare amount and distance traveled.
-- Seasonal patterns indicate increased ride demand during summer months.
-- Peak time rides are associated with slightly higher average fares, reflecting surge pricing or demand pressure.
+- Peak Ride Times: Uber usage peaks during morning and evening commute hours.
+
+- High-Volume Days: Fridays and Saturdays see the highest number of rides.
+
+- Fare Distribution: Most fares fall between $5 and $20, with some high-value outliers.
+
+- Geographic Concentration: Ride density is greatest in Midtown and Lower Manhattan.
+
+- Airport Trips: These rides typically involve longer distances and higher fares.
+
+- Distance-Fare Relationship: There is a strong positive correlation between fare amount and distance traveled.
+
+- Seasonality: Summer months show a notable increase in ride demand.
+
+- Surge Pricing: Peak-hour rides tend to have slightly elevated fares, indicating demand-based pricing effects.
 
 ## Recommendations
 
