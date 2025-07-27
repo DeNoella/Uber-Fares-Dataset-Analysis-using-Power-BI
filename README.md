@@ -73,7 +73,7 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 
 <img width="919" height="207" alt="image" src="https://github.com/user-attachments/assets/c2fa454b-8eb8-4385-aac6-20f4f5fd4784" />
 
-- Fare Distribution with Histogram and Box Plot in Google Colab
+- Fare Distribution with Histogram and Box Plot in Google Colab(Fare amount vs Passenger count)
 ```python
 # Fare amount vs passenger count
 import matplotlib.pyplot as plt
@@ -96,6 +96,44 @@ plt.tight_layout()
 plt.show()
 ```
 <img width="935" height="329" alt="image" src="https://github.com/user-attachments/assets/6ba39f75-e732-4c44-830a-8eb071f97e25" />
+
+-Fare Distribution with Histogram and Box Plot in Google Colab(Fare vs Distance)
+```python
+#  Fare amount vs. distance traveled
+# Haversine function to calculate distance in kilometers
+import numpy as np
+def haversine(lat1, lon1, lat2, lon2):
+    R = 6371  # Earth radius in km
+    lat1, lon1, lat2, lon2 = map(np.radians, [lat1, lon1, lat2, lon2])
+    dlat = lat2 - lat1
+    dlon = lon2 - lon1
+    a = np.sin(dlat/2.0)**2 + np.cos(lat1) * np.cos(lat2) * np.sin(dlon/2.0)**2
+    c = 2 * np.arcsin(np.sqrt(a))
+    return R * c
+
+    # Calculate distance between pickup and dropoff
+uber_df['distance_km'] = haversine(
+    uber_df['pickup_latitude'],
+    uber_df['pickup_longitude'],
+    uber_df['dropoff_latitude'],
+    uber_df['dropoff_longitude']
+)
+
+# Optional: filter out unrealistic distances or fares
+uber_df = uber_df[(uber_df['distance_km'] > 0) & (uber_df['distance_km'] < 100) & (uber_df['fare_amount'] > 0) & (uber_df['fare_amount'] < 200)]
+
+# Plot fare vs. distance
+plt.figure(figsize=(10,6))
+sns.scatterplot(x='distance_km', y='fare_amount', data=uber_df, alpha=0.5)
+sns.regplot(x='distance_km', y='fare_amount', data=uber_df, scatter=False, color='red')  # trend line
+plt.title('Fare Amount vs. Distance Traveled')
+plt.xlabel('Distance (km)')
+plt.ylabel('Fare Amount ($)')
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+```
+<img width="554" height="332" alt="image" src="https://github.com/user-attachments/assets/2cf66132-2fc7-4dfa-80d2-a28141d95af3" />
 
 - Exported cleaned CSV for analysis in Power BI
   ```python
