@@ -73,6 +73,10 @@ This project explores the Uber Fares Dataset using Power BI to extract meaningfu
 
 <img width="919" height="207" alt="image" src="https://github.com/user-attachments/assets/c2fa454b-8eb8-4385-aac6-20f4f5fd4784" />
 
+- Fare Distribution with Histogram and Box Plot in Google Colab
+
+<img width="935" height="329" alt="image" src="https://github.com/user-attachments/assets/6ba39f75-e732-4c44-830a-8eb071f97e25" />
+
 - Exported cleaned CSV for analysis in Power BI
   ```python
   # Save cleaned dataset
